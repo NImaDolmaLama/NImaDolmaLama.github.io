@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        /* ─────────────────────────────────────
+           DESIGN TOKENS
+        ───────────────────────────────────── */
         :root {
             --paper: #fdfbf7;
             --ink: #2d2d2d;
@@ -36,6 +39,8 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* ── PENCIL CURSOR: 45° writing angle, tip at bottom-left (hotspot) ── */
         body {
             font-family: 'Patrick Hand', cursive;
             background-color: var(--paper);
@@ -260,6 +265,10 @@
             width: 60%;
         }
 
+        /* ══════════════════════════════════════════
+           HERO — ALWAYS SIDE-BY-SIDE ON ALL DEVICES
+           Image RIGHT, Text LEFT, image same large size
+        ══════════════════════════════════════════ */
         #home {
             padding-top: 140px;
             display: flex;
@@ -1124,7 +1133,7 @@
             <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
                 <i class="fas fa-calendar-alt"
                     style="font-size:1.8rem;color:#2d5da1;margin-bottom:8px;display:block;"></i>
-                <div class="stat-num" id="since">2023</div>
+                <div class="stat-num" id="since">2022</div>
                 <div class="stat-label">Since</div>
             </div>
             <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
@@ -1228,6 +1237,7 @@
                         <li>Adobe Photoshop — digital painting, photo editing, creative compositions</li>
                         <li>Adobe Illustrator — vector illustrations, icons, scalable designs</li>
                         <li>Canva — posters and social media designs</li>
+                        <li>Adobe Animate — 2D animations, interactive content, motion graphics for web </li>
                     </ul>
                     <h3 style="margin-top:20px;margin-bottom:8px;">✨ What I Do</h3>
                     <ul class="sketch-list">
@@ -1347,7 +1357,7 @@
         new IntersectionObserver(entries => {
             if (entries[0].isIntersecting && !countersStarted) {
                 countersStarted = true;
-                animateCounter(document.getElementById('since'), 2023, 1400);
+                animateCounter(document.getElementById('since'), 2022, 1400);
                 animateCounter(document.getElementById('yearsExp'), 3, 1200);
                 animateCounter(document.getElementById('projectsDone'), 97, 1400);
                 animateCounter(document.getElementById('happyClients'), 52, 1200);
